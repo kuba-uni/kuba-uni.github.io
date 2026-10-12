@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<!--title is used for the title of the website at the very top-->
+    <title>Jakub Leszczak</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<!--h1 through h6 is header text with h6 being smallest while p is for paragraphs-->
+<!--USE <br> FOR LINEBREAK (no closing tag)-->
+<!--<hr> to create a line between website parts (horizontal rule)-->
+
+<!--use <a href="insert link here"> display name</a> to create hyperlinks
+you can also use target=_blank to open the link in a new tab with the default being target=_self
+you can also use mailto: [insert email address] to let someone start an email with the email address-->
+
+<!--type <img src=[/images/image name.png]> to add images which closes itself
+you can use height and width after the image path to change image size (in pixels)
+also use alt to have alternate text for screen reading
+to add a title use title = [text]-->
+
+<!--use <audio controls src=[file name] to play audio>
+useful keywords: autoplay, muted, loop
+use audio closing tag with multiple <source src = [file name]> to have different file types-->
+
+<!--video supports mp4, webm and ogg
+use <video controls src=[file name]>
+useful keywords: autoplay, muted, loop-->
+
+<!--TEXT FORMATTING
+<b></b> to make text bold
+<i></i> to make text italic
+<big> to make text big
+<small> to make text small
+<sub> to make subscript
+<sup> to make text superscript
+<ins> to underline text
+<del> to strikethrough text
+<mark> to highlight text-->
+
+<!--LISTS
+use <ul></ul> to make an unordered list and use <li></li> for each item on the list
+use <ol></ol> to make an ordered list with same rules as unordered and use <ol type = [list type here] to change how it's displayed>
+use <dl></dl> to make a description list. These lists require <dt>term</dt> and <dd>definition</dd>
+you can make sublists in an item in a list-->
+
+<!--TABLES
+use <table></table> to create the table
+use <tr></tr> (table row) to create a table row
+use <th></th> (table headers) to create a header for each row
+use <td></td> (table data) to create text under each header
+use bgcolor = [insert color] to set the background of a part of the table
+use align = [insert alignment] to centre text
+use width on each th element as well as the table to create spacing-->
+
+<!--COLORS
+use style ="[element you want to change]: [value]"
+for colors you can use the color name, rgb value by using rgb(r,g,b) or by using a hexcode
+separate formats using semi-colons ; -->
+
+<!--SPAN AND DIV
+use span tags to change the style of a part of text
+use div tags to apply attributes to entire parts of a document-->
+
+<!--META TAGS
+use meta tags to define things about the website ADD THESE TO THE HEAD SECTION
+<meta name="description" content="[description of website]" would change the description of the website>
+this works for the names: description, keywords, author, viewport (to change the website based on screen width), charset(usually UTF-8)
+http-equiv="refresh" with content being the amount of seconds between refreshes-->
+
+<!--I-FRAMES FOR EMBEDDING
+use <iframe src="[link]">
+width and height is the same as images
+use style = "border:0" to remove the border-->
+
+<!--BUTTONS
+use <button>button text</button> to create a button
+use <a></a> around a button to create a hyperlink
+use disabled to disable the button
+use border-radius to round the corners
+use onclick="[javascript function name]()" to use a java function
+to make a javascript function use <script>function [function name](){[code]}</script>-->
+
+<!--FORMS
+use <form> to create a form
+use <input type="text" id=[name]> to accept input from a user
+use <label for="[id]"> to label input boxes
+use placeholder to create placeholder text before an input happens
+input type="reset" will create a reset button to replace all the text in inputs
+input type="submit" will create a submit button-->
+<style>
+    .left{
+        float: left;
+        width: 45%;
+        background-color: #a5d9ff;
+        border-radius: 10px;
+        margin-left: 4%;
+    }
+    .right{
+        float: right;
+        background-color: #a5d9ff;
+        border-radius: 10px;
+        width: 45%;
+        margin-right: 4%;
+    }
+    .image{
+        height:300px;
+        margin:auto;
+        margin-top: 2%;
+        display:block;
+    }
+    .logo{
+        width:75px;
+        float:right;
+        margin-right: 4%;
+        margin-top: 0.3%;
+    }
+    .column_text{
+        margin: 2%;
+    }
+</style>
+<body style="background-color: #eef5ff; color: #3c3c3c; font-family: Georgia, 'Times New Roman', Times, serif;">
+
+    <a href="https://kubus000.itch.io/">
+    <img src="/images/itch logo.png" class="logo">
+    </a>
+    <a href="https://www.linkedin.com/in/jakub-leszczak-518848316">
+    <img src="/images/linkedin logo.png" class="logo" style="margin-right: 1%;">
+    <div>
+    </a>
+    <h1 style="margin-left: 4%;">Jakub Leszczak<br> Video Games Programmer</h1>
+    </div>
+    <div>
+    <p style="margin-left: 4%;">Hi! I'm a Video Games Programmer focused on NPC AI code such as state machines and behaviour trees.</p>
+    </div>
+    <hr style="display:block; height: 6px; border:0; border-top: 3px solid #3c3c3c; margin: 1em 0; padding: 0; width: 38.9%; margin-left: 4%;">
+
+    <h1 style="margin-left: 4%; font-size: 26px">Projects</h1>
+
+    <!--PROJECT 1 KEROKERO-->
+    <div class="left">
+        <a href="KeroKero.html">
+        <img src="/images/kerokero title.png" class="image">
+        </a>
+        <div class = "column_text">
+        <h2>KeroKero - 2025</h2>
+        <p>KeroKero is a short tower defense game about various frog creatures protecting their realm from other creatures. Inspired by The Battle Cats.<br>Features:</p>
+        <ul>
+            <li>5 unique units</li>
+            <li>Unit upgrade system</li>
+            <li>4 levels of increasing difficulty</li>
+            <li>Jukebox to listen to the soundtrack after you've encountered it in game</li>
+            <li>Charming pixel art</li>
+        </ul>
+        <p>This was a final major project made for college made by a team of 3 people as well as being my first real project. My role on the team was to be a generalist programmer as my teammate specialised in art.<br>
+        This means that I interacted with many systems such as: UI placement and anchoring, state machines and saving data between scenes.</p>
+        </div>
+    </div>
+    <!--CANNON CLASH-->
+    <div class="right">
+        <a href="CannonClash.html">
+        <img src="/images/cc Main menu.png" class="image">
+        </a>
+        <div class="column_text">
+        <h2>Cannon Clash - 2026</h2>
+        <p>Cannon Clash is a short strategy game about taking down pirate ships to claim their loot. Inspired by Plants Vs. Zombies. Made for GBJam14.<br>Features:</p>
+        <ul>
+            <li>5 units with different purposes</li>
+            <li>CPU placement system that adapts to your strategy</li>
+            <li>5 levels with the CPU getting smarter after each level</li>
+            <li>Soundtrack made by YaboMusic</li>
+            <li>Themed around the original gameboy using the Unity pixel perfect camera</li>
+            <li>Pixel art made with the limitation of only being 4 colours</li>
+        </ul>
+        <p>This was a quick game jam project made by a team of 3 people in 10 days. The theme was around old gold. My role on the team was making sprites as well as implementing an animation system using lists of sprites<br>
+        as well as programming all of the different towers seen in game.</p>
+        </div>
+    </div>
+</body>
+</html>
